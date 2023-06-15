@@ -14,8 +14,6 @@ Característica: Flujo de compra en demoblaze
     Ejemplos:
 
       | cantProds | categoria |
-      #| 2         | Monitors  |
       | 2         | Laptops   |
-      #| 2         | Phones    |
 
 
