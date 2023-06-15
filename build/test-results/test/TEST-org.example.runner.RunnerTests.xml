@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.runner.RunnerTests" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LIM-2X8KNN3" time="0.0">
+  <properties/>
+  <system-out><![CDATA[12:03:19.716 [Test worker] DEBUG net.thucydides.core.guice.Injectors - Created injector for module net.thucydides.core.guice.ThucydidesModule
+12:03:19.833 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Usuario/Documents/retoAutomatizacion/e2e/RetoDemoBlaze/src/test/resources/features/demoBlaze.feature
+12:03:19.941 [Test worker] DEBUG net.thucydides.core.guice.Injectors - Created injector for module net.thucydides.core.guice.webdriver.WebDriverModule
+12:03:19.964 [Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+12:03:19.968 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@62338250
+12:03:19.969 [Test worker] INFO  - Test Suite Started: Flujo de compra en demoblaze
+12:03:19.981 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Usuario/Documents/retoAutomatizacion/e2e/RetoDemoBlaze/src/test/resources/features/demoBlaze.feature
+12:03:19.984 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@62338250
+12:03:19.984 [Test worker] INFO  - Test Suite Started: Flujo de compra en demoblaze
+12:04:21.674 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+12:04:21.764 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:64176 : 1
+12:04:21.764 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:26374 : 1
+12:04:21.764 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0x489aa274, L:/127.0.0.1:64182 ! R:localhost/127.0.0.1:64176] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+12:04:21.764 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0x489aa274, L:/127.0.0.1:64182 ! R:localhost/127.0.0.1:64176]
+12:04:21.766 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0x5e9e9eb4, L:/127.0.0.1:64175 ! R:localhost/127.0.0.1:26374] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+12:04:21.766 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0x5e9e9eb4, L:/127.0.0.1:64175 ! R:localhost/127.0.0.1:26374]
+12:04:21.766 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closed 2 connections out of 2 in 2 ms
+12:04:21.807 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+12:04:21.816 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@329e9ff4
+12:04:21.817 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujo de compra en demoblaze:Validar que se pueda realizar una compra en Demoblaze
+12:04:21.817 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@329e9ff4: Generating report for test outcome: Flujo de compra en demoblaze:Validar que se pueda realizar una compra en Demoblaze
+12:04:21.827 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Validar que se pueda realizar una compra en Demoblaze to file C:\Users\Usuario\Documents\retoAutomatizacion\e2e\RetoDemoBlaze\target\site\serenity\8e09b600a373fea5ccaa9223366874094cc0d2f3d982688d524ff6956eb7e47c.json (using temp file C:\Users\Usuario\Documents\retoAutomatizacion\e2e\RetoDemoBlaze\target\site\serenity\8e09b600a373fea5ccaa9223366874094cc0d2f3d982688d524ff6956eb7e47c.json9b2042c3-4566-438d-9330-816d604aaa08)
+12:04:21.858 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujo de compra en demoblaze:Validar que se pueda realizar una compra en Demoblaze done
+12:04:21.859 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+12:04:21.859 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 43 ms
+12:04:21.859 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@56fdb4db
+12:04:21.859 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujo de compra en demoblaze:Validar que se pueda realizar una compra en Demoblaze
+12:04:21.859 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@56fdb4db: Generating report for test outcome: Flujo de compra en demoblaze:Validar que se pueda realizar una compra en Demoblaze
+12:04:25.854 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujo de compra en demoblaze:Validar que se pueda realizar una compra en Demoblaze done
+12:04:25.854 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+12:04:25.854 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 3995 ms
+12:04:25.906 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+12:04:25.906 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
+12:04:25.911 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+]]></system-out>
+  <system-err><![CDATA[?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>

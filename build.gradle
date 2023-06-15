@@ -1,0 +1,74 @@
+gradle.startParameter.continueOnFailure = true
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+
+            url "https://repo1.maven.org/maven2/"
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.4.1"
+        classpath("net.serenity-bdd:serenity-single-page-report:3.4.2")
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.0.0.2929")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+apply plugin:"org.sonarqube"
+
+
+dependencies {
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    implementation group: 'org.eclipse.angus', name: 'angus-mail', version: '1.0.0'
+    implementation group: 'org.springframework', name: 'spring-core', version: '5.3.20'
+    implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+    implementation "net.serenity-bdd:serenity-model:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
+    testImplementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}"
+    testImplementation "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}"
+    testImplementation "net.serenity-bdd:serenity-junit:${serenityCoreVersion}"
+    testImplementation "net.serenity-bdd:serenity-spring:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}"
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+}
+
+sourceCompatibility = '11.0'
+targetCompatibility = '11.0'
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+test {
+    systemProperties System.getProperties()
+    testLogging.showStandardStreams = true
+    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+}
+serenity {
+    reports = ["single-page-html"]
+}
