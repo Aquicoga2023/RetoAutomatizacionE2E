@@ -1,0 +1,8 @@
+El proyecto 2e2 para la compra de productos se realizo de manera satisfactoria.
+Las herramientas usadas promueven la tecnica de testing BDD porque sean implementado Cucumber para
+redactar los casos de prueba y detallar los pasos de manera entendible.
+
+El uso de screenplay mejora la manera de entender el codigo y realizar el mantenimiento.
+Con el uso de senity se promueve no hardcodear valores, sino utilizar ejemplos y variables para ejecutar los casos.
+En conclusion, se han encontrado oportunidades de mejora para el proyecto y la estructura cumple con los standares de
+automatizacion actuales.

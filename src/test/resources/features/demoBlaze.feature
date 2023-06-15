@@ -9,7 +9,7 @@ Característica: Flujo de compra en demoblaze
     Y completo el formulario
       | Name  | Country | City | Creditcard       | Month | Year |
       | Aaron | PERU    | LIMA | 4199651567347524 | 02    | 2024 |
-    #Entonces valido que la compra se haya realizado de forma satisfactoria
+    Entonces valido que la compra se haya realizado de forma satisfactoria
 
     Ejemplos:
 

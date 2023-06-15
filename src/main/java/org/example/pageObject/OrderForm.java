@@ -12,7 +12,7 @@ public class OrderForm extends PageObject {
     public static final Target MONTH = Target.the("month").located(By.id("month"));
     public static final Target YEAR = Target.the("year").located(By.id("year"));
     public static final Target PURCHASE = Target.the("year").located(By.xpath("//*[text()='Purchase']"));
-    public static final Target BTN_OK = Target.the("okBtn").located(By.className("confirm btn btn-lg btn-primary"));
+    public static final Target BTN_OK = Target.the("okBtn").located(By.xpath("/html/body/div[10]/div[7]/div/button"));
 
 
 }
